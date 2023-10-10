@@ -67,7 +67,7 @@ export default class NotificationMessage {
     this.element.remove();
   }
 
-  show(node = null) {
+  show(node = document.body) {
     if (NotificationMessage.#instance) {
       NotificationMessage.#instance.remove();
     }
